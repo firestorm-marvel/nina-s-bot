@@ -8,8 +8,8 @@ import asyncio
 from dotenv import load_dotenv
 import os
 
-
 load_dotenv(dotenv_path="config")
+
 musics = {}
 
 ytdl = youtube_dl.YoutubeDL
@@ -258,4 +258,4 @@ async def kick(ctx, username: discord.User):
 
 
 # on lance notre bot grace au token
-bot.run('ODk5OTcyMDQzNjA3NTM5NzIy.YW6iRw.4TKt5OA_QebfB65FV1UVoL9jw2g')
+bot.run(os.getenv("TOKEN"))
